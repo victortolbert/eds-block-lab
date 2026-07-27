@@ -1,0 +1,36 @@
+{
+  "definitions": [
+    {
+      "title": "Hello World",
+      "id": "hello-world",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Hello World",
+              "model": "hello-world",
+              "eyebrow": "First block",
+              "title": "<h2>Content first, decoration second</h2>",
+              "action": "https://www.aem.live/developer/tutorial",
+              "actionText": "Read the Adobe tutorial"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "hello-world",
+      "fields": [
+        { "component": "text", "name": "eyebrow", "label": "Eyebrow" },
+        { "component": "richtext", "name": "title", "label": "Title" },
+        { "component": "richtext", "name": "body", "label": "Body" },
+        { "component": "aem-content", "name": "action", "label": "Action link", "valueType": "string" },
+        { "component": "text", "name": "actionText", "label": "Action label", "valueType": "string" }
+      ]
+    }
+  ],
+  "filters": []
+}

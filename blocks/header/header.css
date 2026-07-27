@@ -1,0 +1,20 @@
+.header {
+  border-bottom: 1px solid #d7dce5;
+  background: rgb(255 255 255 / 94%);
+}
+
+.header nav {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  height: var(--nav-height);
+  margin: auto;
+  padding: 0 24px;
+}
+
+.header nav a:first-child {
+  color: var(--text-color);
+  font-weight: 700;
+}

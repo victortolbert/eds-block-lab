@@ -1,0 +1,39 @@
+.hello-world {
+  border: 1px solid #d7dce5;
+  border-radius: 24px;
+  padding: 32px;
+  background: linear-gradient(135deg, #f7f9ff, #eef8ff);
+  box-shadow: 0 18px 50px rgb(26 45 85 / 10%);
+}
+
+.hello-world > div {
+  display: block;
+}
+
+.hello-world .hello-world-eyebrow {
+  color: #3451b2;
+  font-size: var(--body-font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hello-world .hello-world-title h2 {
+  max-width: 16ch;
+  margin-top: 12px;
+}
+
+.hello-world .hello-world-body {
+  max-width: 62ch;
+}
+
+.hello-world .hello-world-action {
+  margin-top: 24px;
+}
+
+@media (width >= 900px) {
+  .hello-world {
+    padding: 56px;
+  }
+}
+
