@@ -17,5 +17,8 @@ export default function decorate(block) {
   action?.classList.add('hello-world-action');
 
   const link = action?.querySelector('a');
-  if (link) link.classList.add('button', 'primary');
+  if (link) {
+    link.classList.add('button', 'primary');
+    link.insertAdjacentText('beforeend', ' →');
+  }
 }
